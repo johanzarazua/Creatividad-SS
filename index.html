@@ -13,7 +13,21 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 
   <!-- Custom styles for this template -->
-  <link href="sidebars.css" rel="stylesheet">
+  <!-- <link href="sidebars.css" rel="stylesheet"> -->
+
+  <style>
+    .nav-pills .nav-link{
+        color: #dc3545;
+        font-size: x-small;
+    }
+    .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+        color: #fff;
+        background-color: #dc3545;
+        font-size: x-small;
+    }
+  </style>
+
+
 
   <link rel="icon" href="logo-fi-2.png">
   <title>Servicio Social F.I. U.N.A.M</title>
@@ -24,15 +38,15 @@
   <header class="py-3 mb-4 border-bottom shadow">
     <div class="container-fluid align-items-center d-flex">
 
-      <div class="flex-shrink-1 me-4">
-        <a href="#" class="d-flex align-items-center col-lg-9 mb-2 mb-lg-0 link-dark text-decoration-none">
-          <img src="logo-fi.png" alt="fi-unam" width="200" height="85">
+      <div class="flex-shrink-1 me-4 me-md-2">
+        <a href="#" class="d-flex align-items-center col-md-11 mb-2 mb-lg-0 ps-sm-1 link-dark text-decoration-none">
+          <img class="img-fluid" src="logo-fi.png" alt="fi-unam" width="180" height="65">
         </a>
       </div>
 
-      <div class="flex-grow-1 d-flex align-items-center">
-        <div class="flex-shrink-0 dropdown">
-          <h2 class="text-danger fw-bold fs-2">Servicio Social</h2>
+      <div class="w-100 flex-grow-1 d-flex align-items-center">
+        <div class="flex-shrink-0 dropdown pt-md-2">
+          <p class="text-danger fw-bold fs-4">Servicio Social</p>
         </div>
       </div>
 
@@ -42,96 +56,128 @@
   <div class="container-fluid pb-3 flex-grow-1 d-flex flex-column flex-sm-row overflow-auto">
     <div class="row flex-grow-sm-1 flex-grow-0">
 
-      <aside class=" col-sm-3 flex-grow-sm-1 flex-shrink-1 flex-grow-0 sticky-top pb-sm-0 pb-3 text-danger">
+      <aside class="col-sm-3 col-lg-2 flex-grow-sm-1 flex-shrink-1 flex-grow-0 sticky-top pb-sm-0 pb-3 text-danger">
         <div class="bg-light border rounded-3 p-1 h-100 sticky-top">
-          <ul class="nav nav-pills flex-sm-column flex-row mb-auto justify-content-between text-truncate ps-0">
+
+          <ul class="nav nav-pills flex-sm-column flex-row mb-auto text-truncate ps-0 red">
+            
+            
             <li class=" mb-1">
-              <p class="fs-6 px-2 my-2 text-truncate collapsed" data-bs-toggle="collapse" data-bs-target="#tramites-collapse"
-                aria-expanded="false">
+              <p class="fs-6 fw-bold ps-1 mx-1 text-truncate collapsed" data-bs-toggle="collapse"
+                data-bs-target="#tramites-collapse" aria-expanded="false">
                 <i class="bi bi-award fs-5"></i>
                 <span class="d-none d-sm-inline">Trámites</span>
-                <i class="bi bi-caret-down-fill"></i>
+                <i class="bi bi-caret-down-fill small"></i>
               </p>
               <div class="collapse" id="tramites-collapse">
-                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                  <li class="my-3"><a href="#" class="link-danger ms-4" style="text-decoration: none;">Generales</a></li>
-                  <li class="my-3"><a href="#" class="link-danger ms-4" style="text-decoration: none;">Carta de presentación</a></li>
-                  <li class="my-3"><a href="#" class="link-danger ms-4" style="text-decoration: none;">Consulta de programas</a></li>
-                  <li class="my-3"><a href="#" class="link-danger ms-4" style="text-decoration: none;">Incio del servicio</a></li>
-                  <li class="my-3"><a href="#" class="link-danger ms-4" style="text-decoration: none;">Informes bimestrales</a></li>
-                  <li class="my-3"><a href="#" class="link-danger ms-4" style="text-decoration: none;">Término del servicio</a></li>
-                  <li class="my-3"><a href="#" class="link-danger ms-4" style="text-decoration: none;">Notificaciones</a></li>
-                </ul>
+                <div class="nav flex-column nav-pills mx-1" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                  <a class="nav-link" id="v-pills-tab-t1" data-bs-toggle="pill" data-bs-target="#v-pills-t1" type="button" role="tab" aria-controls="v-pills-t1" aria-selected="false">Generales</a>
+                  <a class="nav-link" id="v-pills-tab-t2" data-bs-toggle="pill" data-bs-target="#v-pills-t2" type="button" role="tab" aria-controls="v-pills-t2" aria-selected="false">Carta de presentación</a>
+                  <a class="nav-link" id="v-pills-tab-t3" data-bs-toggle="pill" data-bs-target="#v-pills-t3" type="button" role="tab" aria-controls="v-pills-t3" aria-selected="false">Consulta de programas</a>
+                  <a class="nav-link" id="v-pills-tab-t4" data-bs-toggle="pill" data-bs-target="#v-pills-t4" type="button" role="tab" aria-controls="v-pills-t4" aria-selected="false">Incio del servicio</a>
+                  <a class="nav-link" id="v-pills-tab-t5" data-bs-toggle="pill" data-bs-target="#v-pills-t5" type="button" role="tab" aria-controls="v-pills-t5" aria-selected="false">Informes bimestrales</a>
+                  <a class="nav-link" id="v-pills-tab-t6" data-bs-toggle="pill" data-bs-target="#v-pills-t6" type="button" role="tab" aria-controls="v-pills-t6" aria-selected="false">Término del servicio</a>
+                  <a class="nav-link" id="v-pills-tab-t7" data-bs-toggle="pill" data-bs-target="#v-pills-t7" type="button" role="tab" aria-controls="v-pills-t7" aria-selected="false">Notificaciones</a>
+                </div>
               </div>
             </li>
 
             <li class=" mb-1">
-              <p class="fs-6 px-2 my-2 text-truncate collapsed" data-bs-toggle="collapse" data-bs-target="#legislacion-collapse"
-                aria-expanded="false">
+              <p class="fs-6 fw-bold ps-1 mx-1 text-truncate collapsed" data-bs-toggle="collapse"
+                data-bs-target="#legislacion-collapse" aria-expanded="false">
                 <i class="bi bi-bank fs-5"></i>
                 <span class="d-none d-sm-inline">Legislación</span>
-                <i class="bi bi-caret-down-fill"></i>
+                <i class="bi bi-caret-down-fill small"></i>
               </p>
               <div class="collapse" id="legislacion-collapse">
-                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                  <li class="my-3"><a href="#" class="link-danger ms-4" style="text-decoration: none;">Constitución (Arts. 3 y 5)</a></li>
-                  <li class="my-3"><a href="#" class="link-danger ms-4" style="text-decoration: none;">Ley reglamentaria Art. 5</a></li>
-                  <li class="my-3"><a href="#" class="link-danger ms-4" style="text-decoration: none;">Reglamento S.S. UNAM</a></li>
-                  <li class="my-3"><a href="#" class="link-danger ms-4" style="text-decoration: none;">Reglamento S.S. F.I.</a></li>
-                  <li class="my-3"><a href="#" class="link-danger ms-4" style="text-decoration: none;">Interpretación del S.S.</a></li>
-                </ul>
+                <div class="nav flex-column nav-pills mx-1" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                  <a class="nav-link" id="v-pills-tab-l1" data-bs-toggle="pill" data-bs-target="#v-pills-l1" type="button" role="tab" aria-controls="v-pills-l1" aria-selected="false">Constitución (Arts. 3 y 5)</a>
+                  <a class="nav-link" id="v-pills-tab-l2" data-bs-toggle="pill" data-bs-target="#v-pills-l2" type="button" role="tab" aria-controls="v-pills-l2" aria-selected="false">Ley reglamentaria Art. 5</a>
+                  <a class="nav-link" id="v-pills-tab-l3" data-bs-toggle="pill" data-bs-target="#v-pills-l3" type="button" role="tab" aria-controls="v-pills-l3" aria-selected="false">Reglamento S.S. UNAM</a>
+                  <a class="nav-link" id="v-pills-tab-l4" data-bs-toggle="pill" data-bs-target="#v-pills-l4" type="button" role="tab" aria-controls="v-pills-l4" aria-selected="false">Reglamento S.S. F.I.</a>
+                  <a class="nav-link" id="v-pills-tab-l5" data-bs-toggle="pill" data-bs-target="#v-pills-l5" type="button" role="tab" aria-controls="v-pills-l5" aria-selected="false">Interpretación del S.S.</a>
+                </div>
               </div>
             </li>
 
             <li class=" mb-1">
-              <p class="fs-6 px-2 my-2 text-truncate collapsed" data-bs-toggle="collapse" data-bs-target="#directorio-collapse"
-                aria-expanded="false">
+              <p class="fs-6 fw-bold ps-1 mx-1 text-truncate collapsed" data-bs-toggle="collapse"
+                data-bs-target="#directorio-collapse" aria-expanded="false">
                 <i class="bi bi-journal-bookmark-fill fs-5"></i>
                 <span class="d-none d-sm-inline">Directorio</span>
-                <i class="bi bi-caret-down-fill"></i>
+                <i class="bi bi-caret-down-fill small"></i>
               </p>
               <div class="collapse" id="directorio-collapse">
-                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                  <li class="my-3"><a href="#" class="link-danger ms-4" style="text-decoration: none;">Cordinadores de S.S.</a></li>
-                  <li class="my-3"><a href="#" class="link-danger ms-4" style="text-decoration: none;">Comité de S.S.</a></li>
-                </ul>
+                <div class="nav flex-column nav-pills mx-1" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                  <a class="nav-link" id="v-pills-tab-d1" data-bs-toggle="pill" data-bs-target="#v-pills-d1" type="button" role="tab" aria-controls="v-pills-d1" aria-selected="false">Cordinadores de S.S.</a>
+                  <a class="nav-link" id="v-pills-tab-d2" data-bs-toggle="pill" data-bs-target="#v-pills-d2" type="button" role="tab" aria-controls="v-pills-d2" aria-selected="false">Comité de S.S.</a>
+                </div>
               </div>
             </li>
+            
           </ul>
+          
         </div>
       </aside>
 
       <main class="col overflow-auto h-100">
         <div class="bg-light border rounded-3 p-3">
-          <h2>Main</h2>
-          <p>Sriracha biodiesel taxidermy organic post-ironic, Intelligentsia salvia mustache 90's code editing brunch.
-            Butcher polaroid VHS art party, hashtag Brooklyn deep v PBR narwhal sustainable mixtape swag wolf squid tote
-            bag. Tote bag cronut semiotics, raw denim deep v taxidermy messenger bag. Tofu YOLO Etsy, direct trade
-            ethical Odd Future jean shorts paleo. Forage Shoreditch tousled aesthetic irony, street art organic Bushwick
-            artisan cliche semiotics ugh synth chillwave meditation. Shabby chic lomo plaid vinyl chambray Vice. Vice
-            sustainable cardigan, Williamsburg master cleanse hella DIY 90's blog.</p>
-          <p>Ethical Kickstarter PBR asymmetrical lo-fi. Dreamcatcher street art Carles, stumptown gluten-free
-            Kickstarter artisan Wes Anderson wolf pug. Godard sustainable you probably haven't heard of them, vegan
-            farm-to-table Williamsburg slow-carb readymade disrupt deep v. Meggings seitan Wes Anderson semiotics,
-            cliche American Apparel whatever. Helvetica cray plaid, vegan brunch Banksy leggings +1 direct trade.
-            Wayfarers codeply PBR selfies. Banh mi McSweeney's Shoreditch selfies, forage fingerstache food truck occupy
-            YOLO Pitchfork fixie iPhone fanny pack art party Portland.</p>
-          <hr />
-          <h4>More content...</h4>
-          <p>Ethical Kickstarter PBR asymmetrical lo-fi. Dreamcatcher street art Carles, stumptown gluten-free
-            Kickstarter artisan Wes Anderson wolf pug. Godard sustainable you probably haven't heard of them, vegan
-            farm-to-table Williamsburg slow-carb readymade disrupt deep v. Meggings seitan Wes Anderson semiotics,
-            cliche American Apparel whatever. Helvetica cray plaid, vegan brunch Banksy leggings +1 direct trade.
-            Wayfarers codeply PBR selfies. Banh mi McSweeney's Shoreditch selfies, forage fingerstache food truck occupy
-            YOLO Pitchfork fixie iPhone fanny pack art party Portland.</p>
-          <hr />
-          <h4>More content...</h4>
-          <p>Sriracha biodiesel taxidermy organic post-ironic, Intelligentsia salvia mustache 90's code editing brunch.
-            Butcher polaroid VHS art party, hashtag Brooklyn deep v PBR narwhal sustainable mixtape swag wolf squid tote
-            bag. Tote bag cronut semiotics, raw denim deep v taxidermy messenger bag. Tofu YOLO Etsy, direct trade
-            ethical Odd Future jean shorts paleo. Forage Shoreditch tousled aesthetic irony, street art organic Bushwick
-            artisan cliche semiotics ugh synth chillwave meditation. Shabby chic lomo plaid vinyl chambray Vice. Vice
-            sustainable cardigan, Williamsburg master cleanse hella DIY 90's blog.</p>
+          
+         
+          <div class="tab-content" id="v-pills-tabContent">
+            <div class="tab-pane fade show active" id="v-pills-principal" role="tabpanel" aria-labelledby="">
+              <h2>Main</h2>
+              <p>Sriracha biodiesel taxidermy organic post-ironic, Intelligentsia salvia mustache 90's code editing brunch.
+                Butcher polaroid VHS art party, hashtag Brooklyn deep v PBR narwhal sustainable mixtape swag wolf squid tote
+                bag. Tote bag cronut semiotics, raw denim deep v taxidermy messenger bag. Tofu YOLO Etsy, direct trade
+                ethical Odd Future jean shorts paleo. Forage Shoreditch tousled aesthetic irony, street art organic Bushwick
+                artisan cliche semiotics ugh synth chillwave meditation. Shabby chic lomo plaid vinyl chambray Vice. Vice
+                sustainable cardigan, Williamsburg master cleanse hella DIY 90's blog.</p>
+              <p>Ethical Kickstarter PBR asymmetrical lo-fi. Dreamcatcher street art Carles, stumptown gluten-free
+                Kickstarter artisan Wes Anderson wolf pug. Godard sustainable you probably haven't heard of them, vegan
+                farm-to-table Williamsburg slow-carb readymade disrupt deep v. Meggings seitan Wes Anderson semiotics,
+                cliche American Apparel whatever. Helvetica cray plaid, vegan brunch Banksy leggings +1 direct trade.
+                Wayfarers codeply PBR selfies. Banh mi McSweeney's Shoreditch selfies, forage fingerstache food truck occupy
+                YOLO Pitchfork fixie iPhone fanny pack art party Portland.</p>
+              <hr />
+              <h4>More content...</h4>
+              <p>Ethical Kickstarter PBR asymmetrical lo-fi. Dreamcatcher street art Carles, stumptown gluten-free
+                Kickstarter artisan Wes Anderson wolf pug. Godard sustainable you probably haven't heard of them, vegan
+                farm-to-table Williamsburg slow-carb readymade disrupt deep v. Meggings seitan Wes Anderson semiotics,
+                cliche American Apparel whatever. Helvetica cray plaid, vegan brunch Banksy leggings +1 direct trade.
+                Wayfarers codeply PBR selfies. Banh mi McSweeney's Shoreditch selfies, forage fingerstache food truck occupy
+                YOLO Pitchfork fixie iPhone fanny pack art party Portland.</p>
+              <hr />
+              <h4>More content...</h4>
+              <p>Sriracha biodiesel taxidermy organic post-ironic, Intelligentsia salvia mustache 90's code editing brunch.
+                Butcher polaroid VHS art party, hashtag Brooklyn deep v PBR narwhal sustainable mixtape swag wolf squid tote
+                bag. Tote bag cronut semiotics, raw denim deep v taxidermy messenger bag. Tofu YOLO Etsy, direct trade
+                ethical Odd Future jean shorts paleo. Forage Shoreditch tousled aesthetic irony, street art organic Bushwick
+                artisan cliche semiotics ugh synth chillwave meditation. Shabby chic lomo plaid vinyl chambray Vice. Vice
+                sustainable cardigan, Williamsburg master cleanse hella DIY 90's blog.</p>
+            </div>
+
+            <!-- Apartado de Tramites -->
+            <div class="tab-pane fade" id="v-pills-t1" role="tabpanel" aria-labelledby="v-pills-tab-t1">t1</div>
+            <div class="tab-pane fade" id="v-pills-t2" role="tabpanel" aria-labelledby="v-pills-tab-t2">t2</div>
+            <div class="tab-pane fade" id="v-pills-t3" role="tabpanel" aria-labelledby="v-pills-tab-t3">t3</div>
+            <div class="tab-pane fade" id="v-pills-t4" role="tabpanel" aria-labelledby="v-pills-tab-t4">t4</div>
+            <div class="tab-pane fade" id="v-pills-t5" role="tabpanel" aria-labelledby="v-pills-tab-t5">t5</div>
+            <div class="tab-pane fade" id="v-pills-t6" role="tabpanel" aria-labelledby="v-pills-tab-t6">t6</div>
+            <div class="tab-pane fade" id="v-pills-t7" role="tabpanel" aria-labelledby="v-pills-tab-t7">t7</div>
+
+            <!-- Apartado de Legislacion -->
+            <div class="tab-pane fade" id="v-pills-l1" role="tabpanel" aria-labelledby="v-pills-tab-l1">l1</div>
+            <div class="tab-pane fade" id="v-pills-l2" role="tabpanel" aria-labelledby="v-pills-tab-l2">l2</div>
+            <div class="tab-pane fade" id="v-pills-l3" role="tabpanel" aria-labelledby="v-pills-tab-l3">l3</div>
+            <div class="tab-pane fade" id="v-pills-l4" role="tabpanel" aria-labelledby="v-pills-tab-l4">l4</div>
+            <div class="tab-pane fade" id="v-pills-l5" role="tabpanel" aria-labelledby="v-pills-tab-l5">l5</div>
+
+            <!-- Apartado de Directorio -->
+            <div class="tab-pane fade" id="v-pills-d1" role="tabpanel" aria-labelledby="v-pills-tab-d1">d1</div>
+            <div class="tab-pane fade" id="v-pills-d2" role="tabpanel" aria-labelledby="v-pills-tab-d2">d2</div>
+          
+          </div>
         </div>
       </main>
     </div>
